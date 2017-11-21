@@ -1,7 +1,7 @@
 # juketong
 
 > a help store project by vue.js微信商城
-http://localhost:8080/blueprint—好评有礼页面
+>下载安装好后：http://localhost:8080/blueprint—好评有礼页面
 
 ## Build Setup
 
