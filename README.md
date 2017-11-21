@@ -1,7 +1,6 @@
 # juketong
 
 > a help store project by vue.js微信商城
->下载安装好后：http://localhost:8080/blueprint—好评有礼页面
 
 ## Build Setup
 
@@ -26,6 +25,7 @@ npm run e2e
 
 # run all tests
 npm test
-```
 
+下载安装好后：http://localhost:8080/blueprint—好评有礼页面
+```
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
