@@ -26,6 +26,9 @@ npm run e2e
 # run all tests
 npm test
 
-下载安装好后：http://localhost:8080/blueprint—好评有礼页面
+下载安装好后：
+http://localhost:8080/#/blueprint—好评有礼页面
+http://localhost:8080/#/binding—绑定手机跳转页面
+http://localhost:8080/#/binphone—绑定手机页面
 ```
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

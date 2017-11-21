@@ -1,0 +1,127 @@
+body{
+  font-size: .13rem;
+  font-family: 微软雅黑;
+  margin:0;
+  padding:0;
+}
+
+/*晒单有礼*/
+#blueprint{
+  background: #f8e3e0;
+}
+.banner{
+  background: url("../img/banner_sd.png") no-repeat;
+  height:2rem;
+}
+.rule{
+  position: absolute;
+  right:.2rem;
+  top:.2rem;
+  color: #fb5074;
+  background: #f7c2c2;
+  padding:.03rem .11rem;
+  border-radius: 10px;
+}
+.step{
+  position: relative;
+  border-top:1px dashed #fb5074;
+  min-height:1rem;
+}
+.s1_xu{
+  position: absolute;
+  top:-.09rem;
+  left:38%;
+  background: #f8e3e0;
+  padding:0 .05rem;
+}
+.s1{
+  border-radius: 50px;
+  padding:0 .2rem .02rem .2rem;
+  background: #fb5074;
+  color: #fff;
+  font-weight: 900;
+  font-size: .1rem;
+}
+.ordernum{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:.2rem .2rem 0 .2rem;
+}
+.ordername{
+  font-size: .12rem;
+  font-weight: 600;
+}
+.input{
+  border:1px solid #333;
+  border-radius: 4px;
+  height:.2rem;
+  width:2rem;
+}
+.maipicture{
+  display: flex;
+  justify-content: space-between;
+  margin:.5rem .16rem .3rem .16rem;
+}
+.maiimg{
+  width:.9rem;
+  height:1.4rem;
+  margin-bottom: .1rem;
+  overflow: hidden;
+  position: relative;
+}
+.maiimg img{
+  width:100%;
+  height:auto;
+}
+.maiimg .li{
+  position: absolute;
+  top: .05rem;
+  right:.05rem;
+  width:.15rem;
+  height:.15rem;
+  text-align: center;
+  line-height: .15rem;
+  background: #fff;
+  color: #fa7a95;
+  border-radius:50%;
+  font-size: .1rem;
+}
+.photo{
+  opacity: 0;
+  width:.6rem;
+  position: absolute;
+  top:0;
+  left: .18rem;
+}
+.chace{
+  position: relative;
+  text-align: center;
+}
+.chace_btn{
+  border: 1px solid #303030;
+  font-size: .1rem;
+  font-weight: 500;
+  padding:.01rem .05rem;
+}
+.chace_btn .fa{
+  font-size: .1rem;
+  margin-right: .02rem;
+}
+.sub{
+  background: #fb4f73;
+  color: #fff;
+  width:1.1rem;
+  height:.25rem;
+  text-align: center;
+  line-height: .25rem;
+  margin:.1rem auto;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+.action{
+  text-align: center;
+}
+.action a{
+  color: #fff;
+}
