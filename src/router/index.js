@@ -8,6 +8,13 @@ import UserCenter from '@/components/UserCenter'
 import Integral from '@/components/Integral'
 import Sign from '@/components/Sign'
 import SignDone from '@/components/SignDone'
+import Distribution from '@/components/Distribution'
+import Sharewecord from '@/components/Sharewecord'
+import FanMall from '@/components/FanMall'
+import Myfan from '@/components/Myfan'
+import Setting from '@/components/Setting'
+import Shouaddress from '@/components/Shouaddress'
+import Newaddress from '@/components/Newaddress'
 
 Vue.use(Router)
 
@@ -52,6 +59,41 @@ export default new Router({
       path: '/signdone',
       name: 'SignDone',
       component: SignDone
+    },
+    {
+      path: '/distribution',
+      name: 'Distribution',
+      component: Distribution
+    },
+    {
+      path: '/sharewecord',
+      name: 'Sharewecord',
+      component: Sharewecord
+    },
+    {
+      path: '/fanmall',
+      name: 'FanMall',
+      component: FanMall
+    },
+    {
+      path: '/myfan',
+      name: 'Myfan',
+      component: Myfan
+    },
+    {
+      path: '/setting',
+      name: 'Setting',
+      component: Setting
+    },
+    {
+      path: '/shouaddress',
+      name: 'Shouaddress',
+      component: Shouaddress
+    },
+    {
+      path: '/newaddress',
+      name: 'Newaddress',
+      component: Newaddress
     }
   ]
 })

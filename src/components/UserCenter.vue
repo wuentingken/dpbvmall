@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <section class="user_top">
-      <div class="setting"><i class="fa fa-cog" aria-hidden="true"></i></div>
+      <div class="setting"><router-link to="setting"><i class="fa fa-cog" aria-hidden="true"></i></router-link></div>
       <div class="userinfo">
         <div class="leona"><img src="../assets/img/tx.jpg" alt=""></div>
         <div class="name">leona</div>
@@ -140,6 +140,9 @@
   .my li{
     width:49%;
     text-align: center;
+  }
+  .setting a{
+    color: #fff;
   }
   .line{
     width:1px!important;
