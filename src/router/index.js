@@ -19,6 +19,7 @@ import Newaddress from '@/components/Newaddress'
 Vue.use(Router)
 
 export default new Router({
+  history:false,
   routes: [
     {
       path: '/',

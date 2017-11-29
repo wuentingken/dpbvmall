@@ -8,6 +8,11 @@ body{
 p{
   margin:0;
 }
+section{
+  font-size:inherit;
+  font-weight: normal;
+  margin:0!important;
+}
 /*晒单有礼*/
 #blueprint{
   background: #f8e3e0;

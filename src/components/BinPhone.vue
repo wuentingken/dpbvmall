@@ -14,7 +14,7 @@
           </li>
           <li>
             <p class="left_n">手机号</p>
-            <p><input type="text" class="input" placeholder="请输入您的手机号"></p>
+            <p><input type="text" class="input" placeholder="请输入您的手机号" v-model="phone"></p>
           </li>
         </ul>
       </div>
@@ -41,9 +41,10 @@
     components: {
       Footer
     },
-    data () {
+    data: function () {
       return {
-        tao: "true"
+        tao: "true",
+        phone: this.$store.state.count
       }
     }
   }
