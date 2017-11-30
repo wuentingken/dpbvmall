@@ -9,6 +9,22 @@
       :direction="direction"
       :error="error" >
     </loading-bar>
+    <ul class="addresslist">
+      <li>
+        <p class="useraddress">成都市</p>
+        <div class="uerinfo">
+          <p class="u_info">吴&nbsp;&nbsp;13551344721</p>
+          <p class="dosometing"><i class="fa fa-trash-o" aria-hidden="true"></i><i class="fa fa-pencil-square-o" aria-hidden="true"></i></p>
+        </div>
+      </li>
+      <li>
+        <p class="useraddress">成都市</p>
+        <div class="uerinfo">
+          <p class="u_info">吴&nbsp;&nbsp;13551344721</p>
+          <p class="dosometing"><i class="fa fa-trash-o" aria-hidden="true"></i><i class="fa fa-pencil-square-o" aria-hidden="true"></i></p>
+        </div>
+      </li>
+    </ul>
     <div class="add_btn">
       <router-link to="/newaddress">
         <i class="fa fa-plus-square-o" aria-hidden="true"></i><span>新增地址</span>
@@ -76,6 +92,28 @@
 </script>
 
 <style scoped>
+  .addresslist{
+    background: #fff;
+  }
+  .addresslist li{
+    padding:.1rem;
+    border-bottom:1px solid #efefef;
+  }
+  .useraddress{
+    font-size:.16rem;
+  }
+  .uerinfo{
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    margin-top:.1rem;
+    font-size:.1rem;
+  }
+  .uerinfo .fa{
+    margin-left:.2rem;
+    font-size: .16rem;
+    color: #aaa;
+  }
   .add_btn{
     position: fixed;
     bottom:0;

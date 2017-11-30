@@ -18,7 +18,7 @@
         </ul>
       </div>
     </section>
-    <div class="confirm" v-bind:class="{active: active}" v-on:click="open()">保存</div>
+    <div class="confirm" v-bind:class="{active: active}">保存</div>
   </div>
 </template>
 
@@ -44,9 +44,6 @@
         }else{
           _this.active = false
         }
-      },
-      open: function(){
-        window.location.href = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx71a4281b28b822e1&redirect_uri=www.dianpubang.net/vmall/#/userinfo&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect'
       }
     }
   }
