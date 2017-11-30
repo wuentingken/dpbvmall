@@ -1,0 +1,109 @@
+1.input框，值变实时监控
+$('body').bind('input propertychange', function() {
+    console.log($("input").val())
+});
+2,安卓微信浏览器播放不了视频：服务器压缩了视频文件就会出现这个问题
+
+3,jquery添加类，error有bug
+4,样式设置半开：
+   border: 1px solid #ccc;
+   border-bottom-color: transparent;
+5,jquery   parent和parents("div:eq(0)")的区别
+6,6s plusjs失效问题
+  function getAjaxData(idx,clear,gc_id="")
+7,bootstrap弹出模态框时触发事件
+  $('#identifier').on('shown.bs.modal', function () {
+  // 执行一些动作...
+  })
+8,图标的基础大小不同，font-size的大小就不同，所以，如果要大小一样的，找的时候要注意找一样的，或者在其外面包裹一个盒子，让他在其中居中。
+9,jquery遍历方法
+ $("li").each(function(){
+    alert($(this).text())
+  });
+10,input框大小里面字的大小的设置
+<input type="text" style="width:200px;line-height: 50px;font-size: 100%;" />
+11,根据屏幕大小设置块的高度
+var pelheight = document.body.clientHeight;
+	$(".table-content").css("height",pelheight-550);
+	$(window).resize(function(){
+   		var pelheight = document.body.clientHeight;
+		$(".table-content").css("height",pelheight-550);
+	});
+12,jquery中attr和prop的区别
+
+在高版本的jquery引入prop方法后，什么时候该用prop？什么时候用attr？它们两个之间有什么区别？这些问题就出现了。
+
+关于它们两个的区别，网上的答案很多。这里谈谈我的心得，我的心得很简单：
+
+对于HTML元素本身就带有的固有属性，在处理时，使用prop方法。
+对于HTML元素我们自己自定义的DOM属性，在处理时，使用attr方法。
+例如：checked问题，使用attr就会出问题
+13,payHave这个类名不起作用？
+14,苹果手机弹出框失效，苹果点击冒泡click只在链接和input框中有效
+要用touchstart或者touchend点击事件才有效
+15,inline-block有换行产生间隙问题，
+16,vertical-align垂直对齐方式
+17,点击打电话：<a href="tel:电话号码"></a>
+18,~是按位取反运算，~~是取反两次
+在这里~~的作用是去掉小数部分
+因为位运算的操作值要求是整数，其结果也是整数，所以经过位运算的都会自动变成整数
+除了~~n 还可以用
+n<<0
+n>>0
+n|0
+取整
+与Math.floor()不同的是，它只是单纯的去掉小数部分，不论正负都不会改变整数部分
+19.目前伪装类是不可获取的。更何况是去修改伪类的content，建议尝试用class去修改他
+<style>
+.cc:after{content:"我是伪类"}
+.cc.aa:after{content:"我的伪类文字被动态修改了"}
+</style>
+<p class="cc"></p>
+<p class="cc"></p>
+jquery代码$(".cc").hover(function(){$(this).addClass("aa");
+20,
+//	基于zepto的左滑删除
+	$('dl').live("swipeLeft",function(){//左滑显示隐藏按键
+        $(this).animate({transform:"translateX(-68px)"},300);
+    }); 
+    $('dl').live("swipeRight",function(){//右滑恢复 
+     	$(this).animate({transform:"translateX(0px)"},300);
+    });
+
+//		基于jquery左滑删除功能
+		$(".wbox").on("touchstart", function(e) {
+		    e.preventDefault();
+		    startX = e.originalEvent.changedTouches[0].pageX,
+		    startY = e.originalEvent.changedTouches[0].pageY;
+		});
+		$(".wbox").on("touchmove", function(e) {
+		    e.preventDefault();
+		    moveEndX = e.originalEvent.changedTouches[0].pageX,
+		    moveEndY = e.originalEvent.changedTouches[0].pageY,
+		    X = moveEndX - startX,
+		    Y = moveEndY - startY;
+		    var movedistance = $(this).css("transform").split(",")[4];
+		    console.log(movedistance)
+		    if ( X < 0 ) {
+		    	if(movedistance>-68){
+		        $(this).css("transform","translateX("+X+"px)");
+		       }
+		    }else if(X > 0){
+		    	if(movedistance<=0){
+		        $(this).css("transform","translateX("+X+"px)");
+		       }
+		    }
+		});
+
+21,sourcecrt
+22,刷新本页
+href="javascript:location.replace(location.href);"
+23,去除谷歌输入框黄色的背景
+input:-webkit-autofill, 
+ textarea:-webkit-autofill, 
+ select:-webkit-autofill { 
+       -webkit-box-shadow: 0 0 0 1000px white inset; 
+}
+ input[type=text]:focus, input[type=password]:focus, textarea:focus {
+      -webkit-box-shadow: 0 0 0 1000px white inset; 
+}
